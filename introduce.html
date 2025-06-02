@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>박예은의 포트폴리오</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+  <header class="header">
+    <div class="logo">YEEUN</div>
+    <nav class="nav">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#activities">Activities</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="home" class="section fade-in">
+      <div class="container">
+        <h1 class="title">Hi, I'm Park Yeeun</h1>
+        <p class="subtitle">A creative mind exploring design, media, and technology to shape a better world.</p>
+      </div>
+    </section>
+
+    <section id="about" class="section fade-in">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>I have been passionate about public advertising since middle school and participated in various projects to convey meaningful messages. Currently studying Computer Engineering, I aim to bridge technology and media to inspire change.</p>
+        <ul class="about-list">
+          <li><strong>학력:</strong> 강원대학교 컴퓨터공학과</li>
+          <li><strong>관심 분야:</strong> UX/UI 디자인, 인터랙티브 미디어, 사회적 메시지 전달</li>
+          <li><strong>기술 스택:</strong> HTML, CSS, JavaScript, Python, Adobe Suite</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="portfolio" class="section fade-in">
+      <div class="container">
+        <h2>Portfolio</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>손 인식 광고 제작</h3>
+            <p>센서를 활용한 인터랙티브 참여형 광고 제작 </p>
+          </div>
+          <div class="card">
+            <h3>봉사활동 리포트</h3>
+            <p>독서 지도, 저소득층 가정을 위한 집수리 등 지역사회에 기여한 다양한 교육 및 환경 개선 봉사 활동</p>
+          </div>
+          <div class="card">
+            <h3>디지털 광고 기획서</h3>
+            <p>AI 기술을 활용하여 브랜드 메시지를 전달하는 전략 수립 및 광고 시안 제작</p>
+          </div>
+          <div class="card">
+            <h3>웹 기반 자기소개 페이지 제작</h3>
+            <p>HTML, CSS, JavaScript를 활용한 반응형 자기소개 웹사이트 디자인 및 구현</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="activities" class="section fade-in">
+      <div class="container">
+        <h2>Extracurricular Activities</h2>
+        <ul class="about-list">
+          <li><strong>기술 연합 동아리 활동:</strong> 디자인과 개발이 결합된 프로젝트 다수 진행</li>
+          <li><strong>멘토링:</strong> 중고등학생 대상 진로 멘토링 활동 참여</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="skills" class="section fade-in">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="grid">
+          <div class="card">
+            <h3>Design Tools</h3>
+            <p>Photoshop 등 시각 디자인 도구 활용</p>
+          </div>
+          <div class="card">
+            <h3>Creative Thinking</h3>
+            <p>문제 해결과 아이디어 발굴을 위한 브레인스토밍 및 기획 역량</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section fade-in">
+      <div class="container">
+        <h2>Contact</h2>
+        <p>이메일 📧 pjh06012@naver.com / pjh06014@gmail.com</p>
+        <p>GitHub 🔗 <a href="https://github.com/your-github">github.com/your-github</a></p>
+        <p>LinkedIn 🔗 <a href="https://linkedin.com/in/your-profile">linkedin.com/in/your-profile</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2025 박예은. Designed with care and creativity.</p>
+  </footer>
+
+  <script>
+    const sections = document.querySelectorAll('.fade-in');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+    sections.forEach(section => observer.observe(section));
+  </script>
+</body>
+</html>
